@@ -1,6 +1,44 @@
-body
+.wrapper
 {
-    margin: 0;
-    padding: 0;
-    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "navbar navbar"
+        "title title"
+        "collab sell"
+        "buy buy"
+        "footer footer"
+}
+.navbar
+{
+    grid-area: navbar;
+    padding: 50px;
+}
+.title
+{   
+    grid-area: title;
+    padding: 70px;
+}
+.collab
+{
+    grid-area: collab;
+}
+.sell
+{
+    grid-area: sell;
+}
+.buy
+{
+    grid-area: buy;
+    padding: 120px;
+}
+.footer
+{
+    grid-area: footer; 
+    padding: 40px;
+}
+
+.col
+{
+    padding: 300px;
 }
