@@ -1,3 +1,17 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1.17em; 
+    margin: .83em 0;
+    background-color: rgba(255, 255, 255, 0.548);
+    padding: 0;
+}
 .wrapper
 {
     display: grid;
@@ -7,7 +21,8 @@
         "title title"
         "collab sell"
         "buy buy"
-        "footer footer"
+        "footer footer";
+    background-color: black;
 }
 .navbar
 {
@@ -18,19 +33,87 @@
 {   
     grid-area: title;
     padding: 70px;
+
+    background-image: url(../images/Piano.jpg);
+    opacity: 0.2;
+
+    transition: all;
+    transition-duration: 1s;
+    transition-property: all;
+
+    font-family: IndieFlower;
+
+    text-align: center;
+
+    -webkit-user-select: none;        
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.title:hover
+{
+    opacity: 1;
 }
 .collab
 {
     grid-area: collab;
+
+    background-image: url(../images/Record.jpg);
+    background-size: cover;
+    opacity: 0.2;
+
+    transition: all;
+    transition-duration: 1s;
+    transition-property: all;
+
+    font-family: Quicksand;
+
+    text-align: center;
+}
+.collab:hover
+{
+    opacity: 1;
 }
 .sell
 {
     grid-area: sell;
+
+    background-image: url(../images/Audience.jpg);
+    background-size: cover;
+    opacity: 0.2;
+
+    transition: all;
+    transition-duration: 1s;
+    transition-property: all;
+
+    font-family: Quicksand;
+
+    text-align: center;
+}
+.sell:hover
+{
+    opacity: 1;
 }
 .buy
 {
     grid-area: buy;
     padding: 120px;
+
+    background-image: url(../images/Equalizer.png);
+    background-size: cover;
+    opacity: 0.2;
+
+    transition: all;
+    transition-duration: 1s;
+    transition-property: all;
+
+
+    font-family: Quicksand;
+    text-align: center;
+}
+.buy:hover
+{
+    opacity: 1;
 }
 .footer
 {
